@@ -29,7 +29,7 @@
 		37DE21DC19B589B7005FEF2D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37DE21DB19B589B7005FEF2D /* CoreGraphics.framework */; };
 		37DE21DE19B589BF005FEF2D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37DE21DD19B589BF005FEF2D /* UIKit.framework */; };
 		37DE21E019B589C8005FEF2D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37DE21DF19B589C8005FEF2D /* Foundation.framework */; };
-		E56ABD8B3E6E42CBB8982B8B /* libPods-OpenCVStaticImageSample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E06F5F07A96A4E808600CA9B /* libPods-OpenCVStaticImageSample.a */; };
+		BF174E281B7A2FBE0014D6F8 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF174E271B7A2FBE0014D6F8 /* opencv2.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +63,7 @@
 		37DE21DD19B589BF005FEF2D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		37DE21DF19B589C8005FEF2D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		965ACA8F6FCC47D7805B58CB /* Pods-OpenCVStaticImageSample.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenCVStaticImageSample.xcconfig"; path = "Pods/Pods-OpenCVStaticImageSample.xcconfig"; sourceTree = "<group>"; };
+		BF174E271B7A2FBE0014D6F8 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
 		E06F5F07A96A4E808600CA9B /* libPods-OpenCVStaticImageSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OpenCVStaticImageSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -80,7 +81,7 @@
 				37DE21D519B5899B005FEF2D /* AVFoundation.framework in Frameworks */,
 				37DE21D419B58993005FEF2D /* MediaPlayer.framework in Frameworks */,
 				37DE21C719B587E5005FEF2D /* QuartzCore.framework in Frameworks */,
-				E56ABD8B3E6E42CBB8982B8B /* libPods-OpenCVStaticImageSample.a in Frameworks */,
+				BF174E281B7A2FBE0014D6F8 /* opencv2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,6 +150,7 @@
 		FF23BFC73CA74732802D47B4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BF174E271B7A2FBE0014D6F8 /* opencv2.framework */,
 				37DE21DF19B589C8005FEF2D /* Foundation.framework */,
 				37DE21DD19B589BF005FEF2D /* UIKit.framework */,
 				37DE21DB19B589B7005FEF2D /* CoreGraphics.framework */,
@@ -367,6 +369,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = OpenCVStaticImageSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -380,6 +386,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = OpenCVStaticImageSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
